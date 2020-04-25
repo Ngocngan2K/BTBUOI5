@@ -1,0 +1,156 @@
+.khung{
+    width: 1116px;
+    height:420px;
+}
+article{
+    width:264px;
+    height:412px;
+    float:left;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+.khoisanpham{
+    width:264px;
+    height:412px;
+}
+
+.anh{
+    position: relative;
+    width:264px;
+    height:335px;
+}
+
+.layer1{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 0;
+}
+
+.layer2{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 1;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.icon{
+    position: absolute;
+    background-color:rgb(231, 225, 225);
+    top:0px;
+    right:0px;
+    z-index: 2; 
+    opacity: 0;
+    width:40px;
+
+}
+
+.icon i{
+    font-size: 25px;
+    padding:7px;
+}
+
+.icon i:hover{
+    background-color: rgb(248, 248, 106);
+    color: white;
+}
+
+.khoisanpham:hover .icon{
+opacity: 1;
+transition: 0.5s;
+
+}
+
+.khoisanpham:hover .layer2{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.tieude{
+    font-size: 18px;
+    font-style: inherit;
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.duoi{
+    margin-top: 10px;
+}
+.duoi .trai{
+    position: relative;
+    width: 180px;
+    height:35px;
+    float:left;
+}
+
+.trai .lop1{
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 0;
+    font-size: 15px;
+}
+.trai .lop2{
+    position: absolute;
+    top:20px;
+    left:0px;
+    z-index: 1;
+    font-size: 15px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.khoisanpham:hover .lop1{
+    top:-20px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.khoisanpham:hover .lop2{
+    top:0px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.duoi .phai{
+    position: relative;
+    width: 70px;
+    height:35px;
+    float:right;
+}
+.phai .maudo{
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.khoisanpham:hover .maudo{
+    top:0px;
+    opacity: 1;
+    transition: 0.5s;
+    }
+.phai .mauxanh{
+    position: absolute;
+    top: -20px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+    background-color:blue;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.khoisanpham:hover .mauxanh{
+    top:0px;
+    opacity: 1;
+    transition: 0.5s;
+}
+
